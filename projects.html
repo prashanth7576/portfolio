@@ -28,9 +28,24 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: rgb(38, 50, 56);
+        }
+
+        .nameLogo{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: -5%;
+            font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+ font-style: italic;
         }
 
 
@@ -69,173 +84,41 @@
             color: rgb(174, 174, 174);
         }
 
-
-        .whatIdo {
-            color: white;
-            margin-top: 200px;
-            font-size: 55px;
-            text-align: center;
+        .projects {
+            border: solid 1px rgb(115, 115, 115, 0.5);
+            width: 430px;
+            margin: 5px;
+            padding: 20px;
+            margin-top: 100px;
             margin-bottom: 100px;
-        }
-
-        .experience{
-            margin-bottom: 7%;
-        }
-
-        .expIcon {
-            border: solid 1px rgb(87, 87, 87);
-            padding: 10px;
-            border-radius: 50%;
-            box-shadow:
-                inset 0 -3em 2em rgba(40, 42, 40, 0.3),
-                0 0 0 0.5px white,
-                0.3em 1em 2em rgba(232, 217, 217, 0.6);
-        }
-
-        .expLogo {
-            
-            width: 170px;
-            height: 150px;
-            margin-left: 15px;
-            margin-top: 40px;
-           
-
-        }
-
-
-
-        .expDes{
-            border: solid 1px rgb(86, 85, 85);
-            padding: 14px;
             border-radius: 10px;
+            box-shadow: 10px 5px 5px rgb(227, 218, 218);
+
+        }
+
+        .projects:hover {
             box-shadow:
                 inset 0 -3em 2em rgba(55, 59, 55, 0.3),
                 0 0 0 0.5px white,
                 0.3em 1em 4em rgba(232, 217, 217, 0.6);
-                margin-left: 10%;
-                
-            
-
         }
 
-        .expDes h4{
+        .projectTitle h5 {
             color: white;
         }
 
-        .expDes .duration{
-            margin-left: 500px;
-        }
-
-        .company{
-            color: rgb(122, 117, 117);
-        }
-
-        .expDes .location{
-            margin-left:560px;
-            color: rgb(122, 117, 117);
-        }
-
-        .expDes .internDuration{
-            margin-left: 400px;
-        }
-
-        .xsilica{
-            color: rgb(122, 117, 117);
-        }
-        .expDes .xsilicaLOC{
-            margin-left:480px;
-            color: rgb(122, 117, 117);
-        }
-
-        .xsilicaLogo {
-            
-            width: 160px;
-            height: 120px;
-            margin-left: 15px;
-            margin-top: 60px;
-           
-
-        }
-
-        .expDes .paygduration{
-            margin-left: 470px;
-        }
-
-        .payg{
-            color: rgb(122, 117, 117);
-        }
-
-        .expDes .paygLOC{
-            margin-left:660px;
-            color: rgb(122, 117, 117);
-        }
-        .i-do {
-            background-color: rgb(38, 50, 56);
-            height: 500px;
-            width: 700px;
-        }
-
-        .work-head {
-            color: white;
-            font-size: 55px;
-        }
-
-        .work {
-            font-size: 22px;
-            color: rgb(174, 174, 174);
-        }
-
-        .work li {
-            list-style: none;
-        }
-
-        .web {
-            margin-left: 50px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-
-
-        .web svg {
+        svg {
             font-size: 50px;
-            margin-left: 20px;
-
         }
 
-
-        .i-doOne {
-            background-color: rgb(38, 50, 56);
-            height: 500px;
-            width: 700px;
+        footer{
+            margin-top: 5%;
+            margin-bottom: 2%;
         }
 
-        .work-headOne {
-            color: white;
-            font-size: 55px;
-        }
-
-        .workOne {
-            font-size: 22px;
-            color: rgb(174, 174, 174);
-        }
-
-        .workOne li {
-            list-style: none;
-        }
-
-        .webOne {
-            margin-left: 100px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-
-
-        .webOne svg {
-            font-size: 50px;
-            margin-left: 20px;
-
+        .designBy{
+            color: rgb(175, 175, 175);
+            
         }
 
         @media screen and (min-width: 480px) {
@@ -260,12 +143,12 @@
 
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
-            <a href="index.html">
+           
+            <a class="nameLogo" href="index.html">
 
-                <!-- <img src="https://arranttech.com/wp-content/uploads/2019/07/Arrant_logo-1.png" alt="logo" height="100px"
-          width="150px" style="margin-right: 30%;"> -->
-
-            </a>
+                Prashanth Goud Janagama
+   
+               </a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
@@ -298,17 +181,22 @@
         </div>
     </nav>
 
-    <div class="container" style="margin-top: 70px;">
+    <div class="container" style="margin-top: 50px;">
         <div class="row">
 
             <div class="col-md-6">
-                <img class="head" src="https://svjmedia.nl/wp-content/uploads/2023/12/agendaenvacatures-e1709027576640-627x376.png" alt="">
+                <img class="head"
+                    src="https://svjmedia.nl/wp-content/uploads/2023/12/agendaenvacatures-e1709027576640-627x376.png"
+                    alt="" data-aos="fade-up" data-aos-duration="3000">
             </div>
 
-            <div class="col-md-6" style="margin-top: 100px;">
+            <div class="col-md-6" style="margin-top: 100px;" data-aos="fade-up" data-aos-duration="3000">
                 <h3 class="exp text-center"> Projects </h3>
 
-                <p class="expInfo text-center" data-aos="zoom-in"> I have extensive experience working on a variety of full-stack projects, utilizing the latest technologies. My expertise lies in creating robust web applications and deploying them using AWS cloud infrastructure. I specialize in integrating front-end and back-end technologies to develop seamless and scalable solutions.</p>
+                <p class="expInfo text-center" data-aos="zoom-in"> I have extensive experience working on a variety of
+                    full-stack projects, utilizing the latest technologies. My expertise lies in creating robust web
+                    applications and deploying them using AWS cloud infrastructure. I specialize in integrating
+                    front-end and back-end technologies to develop seamless and scalable solutions.</p>
 
 
 
@@ -319,183 +207,147 @@
 
         <hr style="color: white;">
 
-        <h1 class="whatIdo">
-            Work & Internship
-        </h1>
+        <div class="row">
+
+            <div class="col-md-4 projects" data-aos="fade-up" data-aos-duration="1500">
+
+                <div class="projectTitle">
+                    <h5> HR Management System </h5>
+
+                </div>
+
+                <div class="projectDes">
+                    <p> Developed an HR Management System to efficiently manage attendance tracking, payrool processing,
+                        and performance evaluation. </p>
+
+                </div>
 
 
-        <div class="row experience">
-            <div class="col-md-2 expIcon" data-aos="fade-right">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(97, 218, 251);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify reactimg"
+                    data-icon="simple-icons:react" data-inline="false">
+                    <path fill="currentColor"
+                        d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236a2.236 2.236 0 0 1-2.236-2.236a2.236 2.236 0 0 1 2.235-2.236a2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622c-1.78-1.653-3.542-2.602-4.887-2.602c-.41 0-.783.093-1.106.278c-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03c-.704 3.113-.39 5.588.988 6.38c.32.187.69.275 1.102.275c1.345 0 3.107-.96 4.888-2.624c1.78 1.654 3.542 2.603 4.887 2.603c.41 0 .783-.09 1.106-.275c1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032c.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127c.666.382.955 1.835.73 3.704c-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28c-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538a15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707c.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86q.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95c-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005a27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947c.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a26 26 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476c-.005.768-1.125 1.74-2.857 2.475c-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5c-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948c-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423c.23 1.868-.054 3.32-.714 3.708c-.147.09-.338.128-.563.128c-1.012 0-2.514-.807-4.11-2.28c.686-.72 1.37-1.536 2.02-2.44c1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532c.66.905 1.345 1.727 2.035 2.446c-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703c.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034q.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565">
+                    </path>
 
-                <img class="expLogo" src="https://arranttech.com/wp-content/uploads/2019/07/Arrant_logo-1.png" alt="">
+                </svg>
+
+                <img src="https://laravel.com/img/logomark.min.svg" alt="">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(0, 117, 143);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                    data-icon="simple-icons:mysql" data-inline="false">
+                    <path fill="currentColor"
+                        d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273c.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333c-.04-.047-.046-.094-.08-.14c-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a51 51 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a73 73 0 0 0-.195 4.41H0q.083-2.95.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095q.363 3.024.428 5.53zm4.017-4.08q-.567 3.069-1.492 4.46q-.723 1.074-1.583 1.073q-.228 0-.566-.138v-.494q.166.026.386.026q.402 0 .647-.222q.295-.27.295-.605q0-.233-.23-.944L6.23 14.615h.91l.727 2.36q.247.804.205 1.123q.6-1.598.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5q.136-.113.255-.25q.649-.76.648-2.253q0-2.745-2.155-2.746q-1.056 0-1.65.697q-.646.762-.646 2.245q-.001 1.459.574 2.14q.524.615 1.583.615q.396 0 .725-.098l1.325.772l.36-.622zM15.5 17.588q-.337-.541-.337-1.736q0-2.09 1.27-2.09q.666 0 .977.5q.336.543.336 1.723q0 2.107-1.27 2.108q-.667 0-.978-.5zm-1.658-.425q0 .706-.516 1.156q-.514.45-1.384.45c-.543 0-1.064-.172-1.573-.515l.237-.476q.656.329 1.19.328q.498 0 .783-.22a.75.75 0 0 0 .3-.615c0-.33-.23-.61-.648-.845c-.388-.213-1.163-.657-1.163-.657c-.422-.307-.632-.636-.632-1.177q0-.674.47-1.085q.471-.416 1.22-.415q.769 0 1.4.41l-.213.476a2.7 2.7 0 0 0-1.064-.23q-.425 0-.654.206a.69.69 0 0 0-.248.524c0 .328.234.61.666.85c.393.215 1.187.67 1.187.67c.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188c-.1.04-.26.04-.274.167c.055.053.063.14.11.214c.08.134.218.313.346.407q.208.167.427.31c.26.16.555.255.81.416c.145.094.293.213.44.313c.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214c-.067-.067-.134-.127-.2-.193a3.2 3.2 0 0 0-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106c.227-.06.435-.047.67-.106q.16-.042.32-.094v-.06c-.12-.12-.21-.283-.334-.395a9 9 0 0 0-1.104-.823c-.21-.134-.476-.22-.697-.334c-.08-.04-.214-.06-.26-.127c-.12-.146-.19-.34-.275-.514a18 18 0 0 1-.547-1.163c-.12-.262-.193-.523-.34-.763c-.69-1.137-1.437-1.826-2.586-2.5c-.247-.14-.543-.2-.856-.274c-.167-.008-.334-.02-.5-.027c-.11-.047-.216-.174-.31-.235c-.38-.24-1.364-.76-1.644-.072c-.18.434.267.862.422 1.082c.115.153.26.328.34.5c.047.116.06.235.107.356c.106.294.207.622.347.897c.073.14.153.287.247.413c.054.073.146.107.167.227c-.094.136-.1.334-.154.5c-.24.757-.146 1.693.194 2.25c.107.166.362.534.703.393c.3-.12.234-.5.32-.835c.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555c.206.328.566.668.867.895c.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.5 3.5 0 0 1-.35-.4a9 9 0 0 1-.747-1.218c-.11-.21-.202-.436-.29-.643c-.04-.08-.04-.2-.107-.24c-.1.146-.247.273-.32.453c-.127.288-.14.642-.188 1.01c-.027.007-.014 0-.027.014c-.214-.052-.287-.274-.367-.46c-.2-.475-.233-1.238-.06-1.785c.047-.14.247-.582.167-.716c-.042-.127-.174-.2-.247-.303a2.5 2.5 0 0 1-.24-.427c-.16-.374-.24-.788-.414-1.162c-.08-.173-.22-.354-.334-.513c-.127-.18-.267-.307-.368-.52c-.033-.073-.08-.194-.027-.274c.014-.054.042-.075.094-.09c.088-.072.335.022.422.062c.247.1.455.194.662.334c.094.066.195.193.315.226h.14c.214.047.455.014.655.073c.355.114.675.28.962.46a5.95 5.95 0 0 1 2.085 2.286c.08.154.115.295.188.455c.14.33.313.663.455.982c.14.315.275.636.476.897c.1.14.502.213.682.286c.133.06.34.115.46.188c.23.14.454.3.67.454c.11.076.443.243.463.378">
+                    </path>
+                </svg>
+
+            </div>
+
+            <div class="col-md-4 projects" data-aos="fade-up" data-aos-duration="1500">
+
+                <div class="projectTitle">
+                    <h5> eCommerce Web Application </h5>
+
+                </div>
+
+                <div class="projectDes">
+                    <p> Developed An eCommerce web application provides a dynamic and responsive shopping experience
+                        with features like product browsing, cart management, and secure checkout. It offers a seamless
+                        UI, fast performance, and API integration for real-time inventory and order processing. </p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(97, 218, 251);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify reactimg"
+                    data-icon="simple-icons:react" data-inline="false">
+                    <path fill="currentColor"
+                        d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236a2.236 2.236 0 0 1-2.236-2.236a2.236 2.236 0 0 1 2.235-2.236a2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622c-1.78-1.653-3.542-2.602-4.887-2.602c-.41 0-.783.093-1.106.278c-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03c-.704 3.113-.39 5.588.988 6.38c.32.187.69.275 1.102.275c1.345 0 3.107-.96 4.888-2.624c1.78 1.654 3.542 2.603 4.887 2.603c.41 0 .783-.09 1.106-.275c1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032c.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127c.666.382.955 1.835.73 3.704c-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28c-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538a15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707c.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86q.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95c-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005a27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947c.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a26 26 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476c-.005.768-1.125 1.74-2.857 2.475c-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5c-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948c-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423c.23 1.868-.054 3.32-.714 3.708c-.147.09-.338.128-.563.128c-1.012 0-2.514-.807-4.11-2.28c.686-.72 1.37-1.536 2.02-2.44c1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532c.66.905 1.345 1.727 2.035 2.446c-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703c.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034q.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565">
+                    </path>
+
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(0, 0, 0);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                    data-icon="simple-icons:nextdotjs" data-inline="false">
+                    <path fill="currentColor"
+                        d="M18.665 21.978A11.94 11.94 0 0 1 12 24C5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251zm-3.332-8.533l1.6 2.061V7.2h-1.6z">
+                    </path>
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(71, 162, 72);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                    data-icon="simple-icons:mongodb" data-inline="false">
+                    <path fill="currentColor"
+                        d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115c-.28-.394-.53-.954-.735-1.44c-.036.495-.055.685-.523 1.184c-.723.566-4.438 3.682-4.74 10.02c-.282 5.912 4.27 9.435 4.888 9.884l.07.05A74 74 0 0 1 11.91 24h.481a29 29 0 0 1 .51-3.07c.417-.296.604-.463.85-.693a11.34 11.34 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218m-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695c-.381-.045-.765-1.76-.765-2.405">
+                    </path>
+                </svg>
+
+            </div>
+
+            <div class="col-md-4 projects" data-aos="fade-up" data-aos-duration="1500">
+
+                <div class="projectTitle">
+                    <h5> Real Time Chat Application </h5>
+
+                </div>
+
+                <div class="projectDes">
+                    <p> Developed a real-time chat application, it supports user authentication, one-on-one and group
+                        messaging, and real-time updates using WebSockets. </p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(97, 218, 251);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify reactimg"
+                    data-icon="simple-icons:react" data-inline="false">
+                    <path fill="currentColor"
+                        d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236a2.236 2.236 0 0 1-2.236-2.236a2.236 2.236 0 0 1 2.235-2.236a2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622c-1.78-1.653-3.542-2.602-4.887-2.602c-.41 0-.783.093-1.106.278c-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03c-.704 3.113-.39 5.588.988 6.38c.32.187.69.275 1.102.275c1.345 0 3.107-.96 4.888-2.624c1.78 1.654 3.542 2.603 4.887 2.603c.41 0 .783-.09 1.106-.275c1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032c.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127c.666.382.955 1.835.73 3.704c-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28c-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538a15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707c.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86q.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95c-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005a27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947c.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a26 26 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476c-.005.768-1.125 1.74-2.857 2.475c-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5c-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948c-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423c.23 1.868-.054 3.32-.714 3.708c-.147.09-.338.128-.563.128c-1.012 0-2.514-.807-4.11-2.28c.686-.72 1.37-1.536 2.02-2.44c1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532c.66.905 1.345 1.727 2.035 2.446c-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703c.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034q.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565">
+                    </path>
+
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(0, 0, 0);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                    data-icon="simple-icons:nextdotjs" data-inline="false">
+                    <path fill="currentColor"
+                        d="M18.665 21.978A11.94 11.94 0 0 1 12 24C5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251zm-3.332-8.533l1.6 2.061V7.2h-1.6z">
+                    </path>
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);color: rgb(71, 162, 72);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                    data-icon="simple-icons:mongodb" data-inline="false">
+                    <path fill="currentColor"
+                        d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115c-.28-.394-.53-.954-.735-1.44c-.036.495-.055.685-.523 1.184c-.723.566-4.438 3.682-4.74 10.02c-.282 5.912 4.27 9.435 4.888 9.884l.07.05A74 74 0 0 1 11.91 24h.481a29 29 0 0 1 .51-3.07c.417-.296.604-.463.85-.693a11.34 11.34 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218m-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695c-.381-.045-.765-1.76-.765-2.405">
+                    </path>
+                </svg>
 
             </div>
 
 
-
-            <div class="col-md-8 expDes" data-aos="fade-left">
-
-                <div class="d-flex flex-row ">
-
-                    <h4> Software Engineer </h4>
-
-                    <p class="duration"> Jan 2024 - Present </p>
-                    
-                </div>
-
-                <div class="d-flex flex-row ">
-
-                    <h5 class="company"> Arrant Technologies </h5>
-
-                    <p class="location"> Texas, USA </p>
-                    
-                </div>
-
-                
-
-
-                
-            <p> I spearheaded the development of an advanced Employee Management System from inception. This role
-                required a blend of coding and strategic decision-making to ensure the system's scalability and
-                security. I utilized React and MongoDB to create a seamless user experience, incorporating JWT-based
-                authentication to safeguard sensitive data. Additionally, I implemented industry-standard coding
-                practices and established effective GitFlow branching strategies to facilitate team collaboration and
-                streamline the development process. My work involved the use of RESTful services and adhering to best
-                practices in software design.</p>
-
-            </div>
         </div>
 
 
-        <div class="row experience">
-            <div class="col-md-2 expIcon" data-aos="fade-right">
-
-                <img class="expLogo" src="https://arranttech.com/wp-content/uploads/2019/07/Arrant_logo-1.png" alt="">
-
-            </div>
 
 
 
-            <div class="col-md-8 expDes" data-aos="fade-left">
-
-                <div class="d-flex flex-row ">
-
-                    <h4 class="intern"> Software Engineer (Intern) </h4>
-
-                    <p class="internDuration"> Jan 2024 - Present </p>
-                    
-                </div>
-
-                <div class="d-flex flex-row ">
-
-                    <h5 class="company"> Arrant Technologies </h5>
-
-                    <p class="location"> Texas, USA </p>
-                    
-                </div>
-
-                
-
-
-                
-            <p> I spearheaded the development of an advanced Employee Management System from inception. This role
-                required a blend of coding and strategic decision-making to ensure the system's scalability and
-                security. I utilized React and MongoDB to create a seamless user experience, incorporating JWT-based
-                authentication to safeguard sensitive data. Additionally, I implemented industry-standard coding
-                practices and established effective GitFlow branching strategies to facilitate team collaboration and
-                streamline the development process. My work involved the use of RESTful services and adhering to best
-                practices in software design.</p>
-
-            </div>
-        </div>
-
-
-
-        <div class="row experience">
-            <div class="col-md-2 expIcon" data-aos="fade-right">
-
-                <img class="expLogo xsilicaLogo" src="https://xsilica.com/images/xsilica_broucher_final_modified_05082016-2.png" alt="">
-
-            </div>
-
-
-
-            <div class="col-md-8 expDes" data-aos="fade-left">
-
-                <div class="d-flex flex-row ">
-
-                    <h4> Software Engineer </h4>
-
-                    <p class="duration"> Jan 2024 - Present </p>
-                    
-                </div>
-
-                <div class="d-flex flex-row ">
-
-                    <h5 class="xsilica"> Xsilica Software Solutions </h5>
-
-                    <p class="xsilicaLOC"> Hyderabad, India </p>
-                    
-                </div>
-
-                
-
-
-                
-            <p> I spearheaded the development of an advanced Employee Management System from inception. This role
-                required a blend of coding and strategic decision-making to ensure the system's scalability and
-                security. I utilized React and MongoDB to create a seamless user experience, incorporating JWT-based
-                authentication to safeguard sensitive data. Additionally, I implemented industry-standard coding
-                practices and established effective GitFlow branching strategies to facilitate team collaboration and
-                streamline the development process. My work involved the use of RESTful services and adhering to best
-                practices in software design.</p>
-
-            </div>
-        </div>
-
-
-
-        <div class="row experience">
-            <div class="col-md-2 expIcon" data-aos="fade-right">
-
-                <img class="expLogo" src="https://payg.in/assets/image/logo.svg" alt="">
-
-            </div>
-
-
-
-            <div class="col-md-8 expDes" data-aos="fade-left">
-
-                <div class="d-flex flex-row ">
-
-                    <h4> Full-Satck Developer </h4>
-
-                    <p class="paygduration"> Jan 2024 - Present </p>
-                    
-                </div>
-
-                <div class="d-flex flex-row ">
-
-                    <h5 class="payg"> PayG  </h5>
-
-                    <p class="paygLOC"> HYderabad, India </p>
-                    
-                </div>
-
-                
-
-
-                
-            <p> I spearheaded the development of an advanced Employee Management System from inception. This role
-                required a blend of coding and strategic decision-making to ensure the system's scalability and
-                security. I utilized React and MongoDB to create a seamless user experience, incorporating JWT-based
-                authentication to safeguard sensitive data. Additionally, I implemented industry-standard coding
-                practices and established effective GitFlow branching strategies to facilitate team collaboration and
-                streamline the development process. My work involved the use of RESTful services and adhering to best
-                practices in software design.</p>
-
-            </div>
-        </div>
 
 
 
@@ -519,6 +371,15 @@
 
     </div>
 </body>
+
+<footer>
+    <h5 class="text-center designBy">
+        Designed by Prashanth Goud Janagama
+    
+    </h5>
+            
+    
+        </footer>
 
 </html>
 
